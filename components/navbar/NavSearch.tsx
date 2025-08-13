@@ -4,7 +4,6 @@ import { Input } from "../ui/input";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
 import { links } from "@/utilities/links";
-import { FaSearch } from "react-icons/fa";
 function NavSearch() {
   const searchParams = useSearchParams();
 
