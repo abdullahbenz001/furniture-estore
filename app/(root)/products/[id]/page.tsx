@@ -5,7 +5,7 @@ import React from 'react';
 import { FetchSingleProduct } from '@/utilities/action';
 import { formatCurrency } from '@/utilities/format';
 import BreadCrumbs from '@/components/single-products/BreadCrumbs';
-import FavoriteToggleButton from '@/components/product/FavoriteToggleButton';
+import FavoriteToggleButton from '@/components/products/FavoriteToggleButton';
 
 
 async function ProductDetailsPage({ params }:  any) {

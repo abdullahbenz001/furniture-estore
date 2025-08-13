@@ -1,4 +1,4 @@
-import ProductsContainer from "@/components/product/ProductsContainer";
+import ProductsContainer from "@/components/products/ProductsContainer";
 import { SearchParams } from "next/dist/server/request/search-params";
 import React from "react";
 

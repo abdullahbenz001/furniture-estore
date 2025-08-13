@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../global/SectionTitle";
-import ProductsGrid from "../product/ProductsGrid";
+import ProductsGrid from "../products/ProductsGrid";
 import { FetchFeaturedProducts } from "@/utilities/action";
 import Emptylist from "../global/Emptylist";
 
