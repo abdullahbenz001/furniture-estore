@@ -1,7 +1,6 @@
 "use server";
 import { redirect } from "next/navigation";
 import db from "./db";
-
 export async function FetchFeaturedProducts() {
   const products = await db.product.findMany({
     where: {
@@ -38,4 +37,7 @@ export async function FetchSingleProduct(productID:string){
     redirect('products')
   }
   return product;
+}
+export const CreateProducts = async () :Promise<{message:string}> =>{
+  return{message:"Product Created"}
 }

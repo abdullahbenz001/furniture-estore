@@ -2,7 +2,8 @@ import React, { Suspense } from "react";
 import HeroCarousel from "./HeroCarousel";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import {LoadingHero} from "../global/LoadingContainer";
+import { LoadingHero } from "../global/LoadingContainer";
+import { links } from "@/utilities/links";
 function Hero() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
@@ -16,7 +17,7 @@ function Hero() {
           ipsa?
         </p>
         <Button asChild className="mt-10 bg-blue-500 text-white" size={"lg"}>
-          <Link href={""}>Our products</Link>
+          <Link href={links.PRODUCTS.href}>Our products</Link>
         </Button>
       </div>
       <Suspense fallback={<LoadingHero />}>
