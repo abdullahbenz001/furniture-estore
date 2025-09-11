@@ -20,6 +20,7 @@ export let links = {
   PRODUCTS: { href: "/products", name: "Products" },
   FAVORITES: { href: "/favorites", name: "Favorites" },
   ORDERS: { href: "/orders", name: "orders" },
+  AdminProducts: { href: "/admin/products", name: "Products" },
 } as const;
 
 export const adminLinks:NavBarLinks[] = [

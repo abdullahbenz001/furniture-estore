@@ -1,6 +1,7 @@
 "use client";
 import { actionFunction } from "@/utilities/types";
-import React, { useActionState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import React, { useActionState, useEffect, useTransition } from "react";
 import { toast } from "sonner";
 
 interface FormProps {
@@ -14,12 +15,20 @@ const initialState = {
 
 function FormContainer({ children, action }: FormProps) {
   const [state, formAction] = useActionState(action, initialState);
+
+    const [isPending,startTransition] = useTransition();
+    const router = useRouter();
+
   useEffect(()=>{
-    if (state.message) {
-      toast("Successfully",{
-        description:state.message
-      })
-    }
+    if (state.message) toast(state.message)
+
+        startTransition(()=>{
+          setTimeout(()=>{
+            router.refresh();
+          },0)
+        })
+
+
   },[state])
 
   return (

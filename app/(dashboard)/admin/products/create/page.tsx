@@ -21,9 +21,9 @@ function CreateProductsPage() {
             <ImageInput />
             <TextAreaInput name="description" labelText="description" />
             <div className="mt-6">
-              <CheckBoxInput name="featured" label="featured" />
+              <CheckBoxInput name="featured" label="featured"/>
             </div>
-            <ButtonsInput text="Create Product" className="mt-6" />
+            <ButtonsInput text="Create Product" className="mt-6"/>
           </div>
         </FormContainer>
       </div>
